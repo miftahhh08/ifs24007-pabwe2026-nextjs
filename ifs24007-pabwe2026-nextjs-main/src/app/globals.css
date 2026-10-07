@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Pastel pink + purple theme. Logic and component structure are unchanged. */
+@theme {
+  --color-slate-50: #fff7fc;
+  --color-slate-100: #fdf0fa;
+  --color-slate-200: #f8def4;
+  --color-slate-300: #edc7e8;
+  --color-slate-400: #c99ac8;
+  --color-slate-500: #a978aa;
+  --color-slate-600: #865b8f;
+  --color-slate-700: #694774;
+  --color-slate-800: #50365f;
+  --color-slate-900: #34233f;
+  --color-slate-950: #24182c;
+
+  --color-indigo-50: #faf5ff;
+  --color-indigo-100: #f4e8ff;
+  --color-indigo-200: #ead5ff;
+  --color-indigo-300: #d8b4fe;
+  --color-indigo-400: #c084fc;
+  --color-indigo-500: #a855f7;
+  --color-indigo-600: #9333ea;
+  --color-indigo-700: #7e22ce;
+  --color-indigo-800: #6b21a8;
+  --color-indigo-900: #581c87;
+  --color-indigo-950: #3b1760;
+
+  --color-rose-50: #fff1f7;
+  --color-rose-100: #ffe0ee;
+  --color-rose-200: #ffc2dd;
+  --color-rose-300: #ff9fc8;
+  --color-rose-400: #fb78ad;
+  --color-rose-500: #f45b99;
+  --color-rose-600: #e94383;
+  --color-rose-700: #c9326d;
+  --color-rose-800: #a82b5d;
+  --color-rose-900: #8d294f;
+  --color-rose-950: #54152f;
+
+  --color-red-50: #fff5f7;
+  --color-red-100: #ffe3e9;
+  --color-red-200: #ffc9d4;
+  --color-red-300: #ff9fb1;
+  --color-red-400: #fb7185;
+  --color-red-500: #f45b72;
+  --color-red-600: #df3f5b;
+  --color-red-700: #bd3049;
+  --color-red-800: #9c293e;
+  --color-red-900: #84283a;
+  --color-red-950: #501421;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 min-h-screen font-sans antialiased;
+    background-image: radial-gradient(circle at 10% 10%, rgba(216, 180, 254, 0.10), transparent 28%), radial-gradient(circle at 90% 20%, rgba(255, 159, 200, 0.08), transparent 25%);
+  }
+}
+
+.glass-panel {
+  background: rgba(52, 35, 63, 0.82);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(216, 180, 254, 0.16);
+}
